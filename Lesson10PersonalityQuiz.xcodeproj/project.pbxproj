@@ -56,15 +56,47 @@
 		806425FB25CB0783004D52C0 /* Lesson10PersonalityQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				806425FC25CB0783004D52C0 /* AppDelegate.swift */,
-				806425FE25CB0783004D52C0 /* SceneDelegate.swift */,
-				8064260025CB0783004D52C0 /* ViewController.swift */,
-				8064260225CB0783004D52C0 /* Main.storyboard */,
-				8064260525CB0784004D52C0 /* Assets.xcassets */,
-				8064260725CB0784004D52C0 /* LaunchScreen.storyboard */,
-				8064260A25CB0784004D52C0 /* Info.plist */,
+				8064261425CB17E8004D52C0 /* AppContr */,
+				8064261325CB17D2004D52C0 /* View */,
+				8064261225CB17C8004D52C0 /* Controller */,
+				8064261525CB180C004D52C0 /* Resources */,
 			);
 			path = Lesson10PersonalityQuiz;
+			sourceTree = "<group>";
+		};
+		8064261225CB17C8004D52C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8064260025CB0783004D52C0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8064261325CB17D2004D52C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8064260725CB0784004D52C0 /* LaunchScreen.storyboard */,
+				8064260225CB0783004D52C0 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8064261425CB17E8004D52C0 /* AppContr */ = {
+			isa = PBXGroup;
+			children = (
+				806425FC25CB0783004D52C0 /* AppDelegate.swift */,
+				806425FE25CB0783004D52C0 /* SceneDelegate.swift */,
+			);
+			path = AppContr;
+			sourceTree = "<group>";
+		};
+		8064261525CB180C004D52C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8064260525CB0784004D52C0 /* Assets.xcassets */,
+				8064260A25CB0784004D52C0 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lessonTypeCasting.Lesson10PersonalityQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lessonTypeCasting.Lesson10PersonalityQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
