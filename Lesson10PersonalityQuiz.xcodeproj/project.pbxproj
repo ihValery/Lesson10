@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8008169525CB1BEB00C5DCF3 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */; };
 		806425FD25CB0783004D52C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806425FC25CB0783004D52C0 /* AppDelegate.swift */; };
 		806425FF25CB0783004D52C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806425FE25CB0783004D52C0 /* SceneDelegate.swift */; };
 		8064260125CB0783004D52C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064260025CB0783004D52C0 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		806425F925CB0783004D52C0 /* Lesson10PersonalityQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson10PersonalityQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806425FC25CB0783004D52C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		806425FE25CB0783004D52C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +58,10 @@
 		806425FB25CB0783004D52C0 /* Lesson10PersonalityQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				8064261425CB17E8004D52C0 /* AppContr */,
+				8064260A25CB0784004D52C0 /* Info.plist */,
 				8064261325CB17D2004D52C0 /* View */,
 				8064261225CB17C8004D52C0 /* Controller */,
+				8064261425CB17E8004D52C0 /* AppContr */,
 				8064261525CB180C004D52C0 /* Resources */,
 			);
 			path = Lesson10PersonalityQuiz;
@@ -77,6 +80,7 @@
 			children = (
 				8064260725CB0784004D52C0 /* LaunchScreen.storyboard */,
 				8064260225CB0783004D52C0 /* Main.storyboard */,
+				8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				8064260525CB0784004D52C0 /* Assets.xcassets */,
-				8064260A25CB0784004D52C0 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				8064260925CB0784004D52C0 /* LaunchScreen.storyboard in Resources */,
 				8064260625CB0784004D52C0 /* Assets.xcassets in Resources */,
+				8008169525CB1BEB00C5DCF3 /* SignUp.storyboard in Resources */,
 				8064260425CB0783004D52C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
