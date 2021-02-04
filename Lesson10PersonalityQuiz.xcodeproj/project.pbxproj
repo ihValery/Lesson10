@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8008169525CB1BEB00C5DCF3 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */; };
 		800E3CA025CC262300D16DC2 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E3C9F25CC262300D16DC2 /* signUpViewController.swift */; };
+		803497D025CC906000F22A56 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803497CF25CC906000F22A56 /* UserModel.swift */; };
+		803497D325CC952200F22A56 /* MainApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803497D225CC952200F22A56 /* MainApp.storyboard */; };
+		803497DA25CCA9C700F22A56 /* MainAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803497D925CCA9C700F22A56 /* MainAppViewController.swift */; };
 		806425FD25CB0783004D52C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806425FC25CB0783004D52C0 /* AppDelegate.swift */; };
 		806425FF25CB0783004D52C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806425FE25CB0783004D52C0 /* SceneDelegate.swift */; };
 		8064260125CB0783004D52C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064260025CB0783004D52C0 /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		800E3C9F25CC262300D16DC2 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		803497CF25CC906000F22A56 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		803497D225CC952200F22A56 /* MainApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainApp.storyboard; sourceTree = "<group>"; };
+		803497D925CCA9C700F22A56 /* MainAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppViewController.swift; sourceTree = "<group>"; };
 		806425F925CB0783004D52C0 /* Lesson10PersonalityQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson10PersonalityQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806425FC25CB0783004D52C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		806425FE25CB0783004D52C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		803497CD25CC8ED700F22A56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				803497CF25CC906000F22A56 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		806425F025CB0783004D52C0 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +74,7 @@
 		806425FB25CB0783004D52C0 /* Lesson10PersonalityQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				803497CD25CC8ED700F22A56 /* Model */,
 				8064260A25CB0784004D52C0 /* Info.plist */,
 				8064261325CB17D2004D52C0 /* View */,
 				8064261225CB17C8004D52C0 /* Controller */,
@@ -74,6 +89,7 @@
 			children = (
 				8064260025CB0783004D52C0 /* ViewController.swift */,
 				800E3C9F25CC262300D16DC2 /* signUpViewController.swift */,
+				803497D925CCA9C700F22A56 /* MainAppViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -84,6 +100,7 @@
 				8064260725CB0784004D52C0 /* LaunchScreen.storyboard */,
 				8064260225CB0783004D52C0 /* Main.storyboard */,
 				8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */,
+				803497D225CC952200F22A56 /* MainApp.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803497D325CC952200F22A56 /* MainApp.storyboard in Resources */,
 				8064260925CB0784004D52C0 /* LaunchScreen.storyboard in Resources */,
 				8064260625CB0784004D52C0 /* Assets.xcassets in Resources */,
 				8008169525CB1BEB00C5DCF3 /* SignUp.storyboard in Resources */,
@@ -177,8 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8064260125CB0783004D52C0 /* ViewController.swift in Sources */,
+				803497DA25CCA9C700F22A56 /* MainAppViewController.swift in Sources */,
 				806425FD25CB0783004D52C0 /* AppDelegate.swift in Sources */,
 				800E3CA025CC262300D16DC2 /* signUpViewController.swift in Sources */,
+				803497D025CC906000F22A56 /* UserModel.swift in Sources */,
 				806425FF25CB0783004D52C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
