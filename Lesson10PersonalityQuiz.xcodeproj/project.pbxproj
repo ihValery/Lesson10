@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8008169525CB1BEB00C5DCF3 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */; };
+		800E3CA025CC262300D16DC2 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E3C9F25CC262300D16DC2 /* signUpViewController.swift */; };
 		806425FD25CB0783004D52C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806425FC25CB0783004D52C0 /* AppDelegate.swift */; };
 		806425FF25CB0783004D52C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806425FE25CB0783004D52C0 /* SceneDelegate.swift */; };
 		8064260125CB0783004D52C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064260025CB0783004D52C0 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		800E3C9F25CC262300D16DC2 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		806425F925CB0783004D52C0 /* Lesson10PersonalityQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson10PersonalityQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806425FC25CB0783004D52C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		806425FE25CB0783004D52C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				8064260025CB0783004D52C0 /* ViewController.swift */,
+				800E3C9F25CC262300D16DC2 /* signUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				8064260125CB0783004D52C0 /* ViewController.swift in Sources */,
 				806425FD25CB0783004D52C0 /* AppDelegate.swift in Sources */,
+				800E3CA025CC262300D16DC2 /* signUpViewController.swift in Sources */,
 				806425FF25CB0783004D52C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
