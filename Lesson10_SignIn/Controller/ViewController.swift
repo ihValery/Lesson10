@@ -22,9 +22,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setMyDesign()
-        if checkToken() {
-            performSegue(withIdentifier: "segueToMainApp", sender: nil)
-        }
+        authorizedOrNot()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -46,6 +45,13 @@ class ViewController: UIViewController {
 //            print(UserDefaults.standard.string(forKey: "Password"))
         } else {
             emailOrPassIncorrect.isHidden = false
+        }
+    }
+    
+    //проваливаемся в приложение или нет
+    private func authorizedOrNot() {
+        if checkToken() {
+            performSegue(withIdentifier: "segueToMainApp", sender: nil)
         }
     }
     
@@ -75,8 +81,8 @@ class ViewController: UIViewController {
         //Если мы смогли вытащить значение и привести к Date
         if let tempDate = UserDefaults.standard.object(forKey: "Date") as? Date,
            let earlyDate = Calendar.current.date(
-            byAdding: .hour,
-            value: -1,
+            byAdding: .minute,
+            value: -10,
             to: Date()) {
             return earlyDate <= tempDate
         } else {
@@ -103,6 +109,9 @@ class ViewController: UIViewController {
         passTF.layer.cornerRadius = 15
         passTF.layer.borderWidth = 0.1
         passTF.clipsToBounds = true
+        
+        navigationController?.navigationBar.tintColor = .red
+        navigationController?.navigationBar.alpha = 0
     }
 
     //Проверка на корректность emaila (находиться в stackoverflow)
