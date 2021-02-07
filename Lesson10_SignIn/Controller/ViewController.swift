@@ -18,11 +18,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passTF: UITextField!
     
+    @IBOutlet weak var saveEmail: UILabel!
+    @IBOutlet weak var savePass: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setMyDesign()
         authorizedOrNot()
+        showEmailAndPass()
         
         // Do any additional setup after loading the view.
     }
@@ -36,16 +41,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signInButtonAction(_ sender: UIButton) {
-        if isValidEmail(emailTF.text ?? "") {
+        if let email = UserDefaults.standard.string(forKey: "emailSU"), email == emailTF.text ,
+           let pass = UserDefaults.standard.string(forKey: "passSU"), pass == passTF.text {
             saveCredantional()
             saveTokenSwitch()
             performSegue(withIdentifier: "segueToMainApp", sender: nil)
-//            print("isValidEmail")
-//            print(UserDefaults.standard.string(forKey: "Email"))
-//            print(UserDefaults.standard.string(forKey: "Password"))
         } else {
             emailOrPassIncorrect.isHidden = false
         }
+        
+//        if isValidEmail(emailTF.text ?? "") {
+//            saveCredantional()
+//            saveTokenSwitch()
+//            performSegue(withIdentifier: "segueToMainApp", sender: nil)
+//            print("isValidEmail")
+//            print(UserDefaults.standard.string(forKey: "Email"))
+//            print(UserDefaults.standard.string(forKey: "Password"))
+//        } else {
+//            emailOrPassIncorrect.isHidden = false
+//        }
     }
     
     //проваливаемся в приложение или нет
@@ -57,8 +71,8 @@ class ViewController: UIViewController {
     
     //Записываем фиктивный токен
     private func saveCredantional() {
-        UserDefaults.standard.set(emailTF.text, forKey: "Email")
-        UserDefaults.standard.set(passTF.text, forKey: "Password")
+        UserDefaults.standard.set(emailTF.text, forKey: "emailSU")
+        UserDefaults.standard.set(passTF.text, forKey: "passSU")
     }
     
     private func saveTokenSwitch() {
@@ -110,6 +124,9 @@ class ViewController: UIViewController {
         passTF.layer.borderWidth = 0.1
         passTF.clipsToBounds = true
         
+        saveEmail.isHidden = true
+        savePass.isHidden = true
+        
         navigationController?.navigationBar.tintColor = .red
         navigationController?.navigationBar.alpha = 0
     }
@@ -131,5 +148,19 @@ class ViewController: UIViewController {
     private func signInBttnActivna(bool: Bool) {
         signInButton.alpha = bool ? 1 : 0.3
         signInButton.isEnabled = bool
+    }
+    
+    //показывает наши сохранненые email u password
+    private func showEmailAndPass() {
+        if let email = UserDefaults.standard.string(forKey: "emailSU") {
+            saveEmail.text = email
+            saveEmail.isHidden = false
+            saveEmail.textColor = .lightGray
+        }
+        if let pass = UserDefaults.standard.string(forKey: "passSU") {
+            savePass.text = pass
+            savePass.isHidden = false
+            savePass.textColor = .lightGray
+        }
     }
 }

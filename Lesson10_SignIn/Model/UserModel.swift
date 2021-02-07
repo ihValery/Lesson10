@@ -8,8 +8,8 @@
 import Foundation
 
 struct UserModel {
-    let name: String?
-    let surName: String?
-    let email: String?
-    let pass: String?
+    let name: String? = nil
+    let surName: String? = nil
+    var email: String? = nil
+    var pass: String? = nil
 }
