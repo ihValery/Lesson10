@@ -10,6 +10,7 @@
 		8008169525CB1BEB00C5DCF3 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */; };
 		800E3CA025CC262300D16DC2 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E3C9F25CC262300D16DC2 /* signUpViewController.swift */; };
 		802A220825D108830005CDEE /* verificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A220725D108830005CDEE /* verificationVC.swift */; };
+		802A220B25D133180005CDEE /* AnketaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A220A25D133180005CDEE /* AnketaVC.swift */; };
 		803497D025CC906000F22A56 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803497CF25CC906000F22A56 /* UserModel.swift */; };
 		803497D325CC952200F22A56 /* MainApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803497D225CC952200F22A56 /* MainApp.storyboard */; };
 		803497DA25CCA9C700F22A56 /* MainAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803497D925CCA9C700F22A56 /* MainAppViewController.swift */; };
@@ -25,6 +26,7 @@
 		8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		800E3C9F25CC262300D16DC2 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		802A220725D108830005CDEE /* verificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verificationVC.swift; sourceTree = "<group>"; };
+		802A220A25D133180005CDEE /* AnketaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnketaVC.swift; sourceTree = "<group>"; };
 		803497CF25CC906000F22A56 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		803497D225CC952200F22A56 /* MainApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainApp.storyboard; sourceTree = "<group>"; };
 		803497D925CCA9C700F22A56 /* MainAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				800E3C9F25CC262300D16DC2 /* signUpViewController.swift */,
 				803497D925CCA9C700F22A56 /* MainAppViewController.swift */,
 				802A220725D108830005CDEE /* verificationVC.swift */,
+				802A220A25D133180005CDEE /* AnketaVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				806425FD25CB0783004D52C0 /* AppDelegate.swift in Sources */,
 				800E3CA025CC262300D16DC2 /* signUpViewController.swift in Sources */,
 				803497D025CC906000F22A56 /* UserModel.swift in Sources */,
+				802A220B25D133180005CDEE /* AnketaVC.swift in Sources */,
 				806425FF25CB0783004D52C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

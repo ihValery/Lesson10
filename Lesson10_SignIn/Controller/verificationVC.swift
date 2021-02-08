@@ -23,7 +23,7 @@ class verificationVC: UIViewController, UITextFieldDelegate {
         errorPinLabel.isHidden = true
         if let textField = vTextField.text {
             if textField == vTextField.placeholder {
-                performSegue(withIdentifier: "fromRegistrationToMainApp", sender: nil)
+                performSegue(withIdentifier: "toAnketa", sender: nil)
             } else if textField.count == 4 {
                 errorPinLabel.isHidden = false
                 updatePCBttn.isHidden = false
