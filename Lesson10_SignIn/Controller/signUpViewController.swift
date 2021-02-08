@@ -42,7 +42,8 @@ class signUpViewController: UIViewController {
                let eightPass = passTFsecond.text?.count, eightPass >= 8 {
                 UserDefaults.standard.set(passTFsecond.text, forKey: "passSU")
                 
-               performSegue(withIdentifier: "fromRegistrationToMainApp", sender: nil)
+               performSegue(withIdentifier: "inVerification", sender: nil)
+                //performSegue(withIdentifier: "fromRegistrationToMainApp", sender: nil)
             } else {
                 emailOrPassIncorrect.text = "Password is not correct"
                 emailOrPassIncorrect.isHidden = false

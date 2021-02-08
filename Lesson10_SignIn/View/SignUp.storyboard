@@ -124,12 +124,79 @@
                         <outlet property="passTFsecond" destination="xnR-6L-358" id="v7C-BY-gSE"/>
                         <outlet property="passTFsecondTwo" destination="Jj5-IU-WAH" id="07L-lM-bIi"/>
                         <outlet property="registrationButtonAction" destination="Bg0-JV-C6x" id="nf0-Ag-3DW"/>
-                        <segue destination="DGl-a6-cuf" kind="show" identifier="fromRegistrationToMainApp" id="nU2-2n-MAu"/>
+                        <segue destination="OIZ-ka-KBC" kind="show" identifier="inVerification" id="3BE-B7-YpW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBf-N9-X0r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-760.86956521739137" y="-982.36607142857133"/>
+        </scene>
+        <!--VerificationVC-->
+        <scene sceneID="iJ6-OZ-m57">
+            <objects>
+                <viewController storyboardIdentifier="verificationSB" id="OIZ-ka-KBC" customClass="verificationVC" customModule="Lesson10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6JC-Ji-vkw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdF-WH-4qh">
+                                <rect key="frame" x="49" y="96" width="230" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="SLU-hQ-Lox"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An email with an account activation code has been sent to your email address." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUg-fF-md4">
+                                <rect key="frame" x="25" y="197" width="364" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter this code to complete the registration." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTe-xi-ctr">
+                                <rect key="frame" x="25" y="488" width="364" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="8765" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftB-XV-EMS">
+                                <rect key="frame" x="117" y="309" width="180" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="cpM-cI-dTt"/>
+                                    <constraint firstAttribute="width" constant="180" id="kQL-rr-plL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="vTextFieldAction:" destination="OIZ-ka-KBC" eventType="editingChanged" id="azX-X8-rUz"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ncs-rH-bkX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PUg-fF-md4" firstAttribute="trailing" secondItem="ncs-rH-bkX" secondAttribute="trailing" constant="-25" id="3hW-91-Vte"/>
+                            <constraint firstItem="ftB-XV-EMS" firstAttribute="top" secondItem="PUg-fF-md4" secondAttribute="bottom" constant="64" id="DEb-ys-3AQ"/>
+                            <constraint firstItem="ftB-XV-EMS" firstAttribute="centerX" secondItem="ncs-rH-bkX" secondAttribute="centerX" id="ENc-5V-zGn"/>
+                            <constraint firstItem="PdF-WH-4qh" firstAttribute="top" secondItem="ncs-rH-bkX" secondAttribute="top" constant="96" id="EsG-ku-GgO"/>
+                            <constraint firstItem="gTe-xi-ctr" firstAttribute="leading" secondItem="ncs-rH-bkX" secondAttribute="leading" constant="25" id="Iy0-eY-Z8r"/>
+                            <constraint firstItem="PdF-WH-4qh" firstAttribute="leading" secondItem="ncs-rH-bkX" secondAttribute="leading" constant="49" id="L1q-Qa-YXT"/>
+                            <constraint firstItem="PUg-fF-md4" firstAttribute="leading" secondItem="ncs-rH-bkX" secondAttribute="leading" constant="25" id="bxR-pj-lCW"/>
+                            <constraint firstItem="gTe-xi-ctr" firstAttribute="trailing" secondItem="ncs-rH-bkX" secondAttribute="trailing" constant="-25" id="gmO-uU-tqX"/>
+                            <constraint firstItem="PUg-fF-md4" firstAttribute="top" secondItem="PdF-WH-4qh" secondAttribute="bottom" constant="16" id="kL1-Xk-pqH"/>
+                            <constraint firstItem="gTe-xi-ctr" firstAttribute="top" secondItem="ftB-XV-EMS" secondAttribute="bottom" constant="79" id="o5r-il-eNg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dyg-ds-nk1"/>
+                    <connections>
+                        <outlet property="vTextField" destination="ftB-XV-EMS" id="U4z-aY-jR2"/>
+                        <segue destination="DGl-a6-cuf" kind="show" identifier="fromRegistrationToMainApp" id="3an-fl-ktk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ct-GI-t3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="-982.36607142857133"/>
         </scene>
         <!--MainApp-->
         <scene sceneID="Eny-5m-bSs">
@@ -139,7 +206,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdQ-HK-UIR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-158" y="-865"/>
+            <point key="canvasLocation" x="903" y="-1246"/>
         </scene>
     </scenes>
     <resources>

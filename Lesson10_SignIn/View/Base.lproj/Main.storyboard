@@ -160,10 +160,10 @@
             </objects>
             <point key="canvasLocation" x="960" y="93.838862559241704"/>
         </scene>
-        <!--MainApp-->
+        <!--verificationSB-->
         <scene sceneID="ohW-7y-ZWG">
             <objects>
-                <viewControllerPlaceholder storyboardName="MainApp" id="hGf-1s-h3s" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="verificationSB" id="hGf-1s-h3s" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="daz-gQ-Fo1"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEF-mP-EOw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
