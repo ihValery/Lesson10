@@ -14,9 +14,11 @@ class AnketaVC: UIViewController {
     @IBOutlet weak var genderSegmentControl: UISegmentedControl!
     @IBOutlet weak var sendDataButton: UIButton!
     @IBOutlet weak var skipButton: UIButton!
-    @IBOutlet weak var stepperChilfren: UIStepper!
+    @IBOutlet weak var stepperChildren: UIStepper!
     @IBOutlet weak var numberChildren: UILabel!
-    
+    @IBOutlet weak var smokeSwitch: UISwitch!
+    @IBOutlet weak var vegeterianSwitch: UISwitch!
+    @IBOutlet weak var fillInAllTheFields: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,19 +39,28 @@ class AnketaVC: UIViewController {
         }
     }
     @IBAction func sendDataBttnAction(_ sender: UIButton) {
+        if let nameTF = nameTF.text, let surNameTF = surnameTF.text {
+            UserDefaults.standard.set(nameTF, forKey: "name")
+            UserDefaults.standard.set(surNameTF, forKey: "surname")
+            
+            if smokeSwitch.isOn { UserDefaults.standard.set("smoke", forKey: "smoke") }
+            if vegeterianSwitch.isOn { UserDefaults.standard.set("vegan", forKey: "vegeterian") }
+            
+            UserDefaults.standard.set(String(format: "%.0f", stepperChildren.value), forKey: "children")
+        } else {
+            fillInAllTheFields.isHidden = false
+        }
+        
         
     }
     
-    @IBAction func skipBttnAction(_ sender: UIButton) {
-        
-    }
     
     @IBAction func stepperAction(_ sender: UIStepper) {
-        switch stepperChilfren.value {
+        switch stepperChildren.value {
         case 0:
             numberChildren.text = ""
         case 1...4:
-            numberChildren.text = String(format: "%.0f", stepperChilfren.value)
+            numberChildren.text = String(format: "%.0f", stepperChildren.value)
         case 5:
             numberChildren.text = "large family"
         default:
@@ -77,10 +88,10 @@ class AnketaVC: UIViewController {
         genderSegmentControl.setTitle("woman", forSegmentAt: 2)
         genderSegmentControl.selectedSegmentIndex = 1
         
-        stepperChilfren.value = 0
-        stepperChilfren.minimumValue = 0
-        stepperChilfren.maximumValue = 5
-        stepperChilfren.layer.cornerRadius = 15
+        stepperChildren.value = 0
+        stepperChildren.minimumValue = 0
+        stepperChildren.maximumValue = 5
+        stepperChildren.layer.cornerRadius = 15
         
         nameTF.layer.cornerRadius = 15
         nameTF.layer.borderWidth = 0.1
@@ -89,6 +100,8 @@ class AnketaVC: UIViewController {
         surnameTF.layer.cornerRadius = 15
         surnameTF.layer.borderWidth = 0.1
         surnameTF.clipsToBounds = true
+        
+        fillInAllTheFields.isHidden = true
     }
     
     //Скрыть панель навигации на контроллере этого вида

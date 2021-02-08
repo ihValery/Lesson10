@@ -245,7 +245,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="oJM-wu-bH0"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                <textInputTraits key="textInputTraits" textContentType="name"/>
                                                 <connections>
                                                     <action selector="emailTFChangedSU:" destination="m2q-46-Jol" eventType="editingChanged" id="2Pu-oJ-GLe"/>
                                                 </connections>
@@ -256,7 +256,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="14W-ro-O00"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" textContentType="name"/>
                                                 <connections>
                                                     <action selector="passTFChangedSU:" destination="m2q-46-Jol" eventType="editingChanged" id="7M4-3r-KZs"/>
                                                 </connections>
@@ -329,8 +329,8 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Email or Password is incorrect" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tf-cX-xzL">
-                                        <rect key="frame" x="0.0" y="348" width="201.5" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill in all the fields" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tf-cX-xzL">
+                                        <rect key="frame" x="0.0" y="348" width="115" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                         <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -361,7 +361,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="skipBttnAction:" destination="vfn-4V-OvL" eventType="touchUpInside" id="Zhz-bC-lWM"/>
                                     <segue destination="DGl-a6-cuf" kind="show" id="x73-PW-Hyo"/>
                                 </connections>
                             </button>
@@ -398,13 +397,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="Z1g-gl-S0t"/>
                     <connections>
+                        <outlet property="fillInAllTheFields" destination="4Tf-cX-xzL" id="Lhh-WT-4MC"/>
                         <outlet property="genderSegmentControl" destination="S6x-IC-ZRe" id="v6y-VH-vKy"/>
                         <outlet property="nameTF" destination="fGM-aX-nBL" id="osM-wf-cQd"/>
                         <outlet property="numberChildren" destination="mDq-Ni-O2c" id="hbe-bj-Wda"/>
                         <outlet property="sendDataButton" destination="hXu-EM-hem" id="hei-nS-7Mm"/>
                         <outlet property="skipButton" destination="Fbc-bt-u2O" id="0Pq-fK-58H"/>
-                        <outlet property="stepperChilfren" destination="c5l-sV-Rgw" id="hIB-N7-Pss"/>
+                        <outlet property="smokeSwitch" destination="BpW-bA-qfd" id="Aig-tL-GjJ"/>
+                        <outlet property="stepperChildren" destination="c5l-sV-Rgw" id="hIB-N7-Pss"/>
                         <outlet property="surnameTF" destination="ChF-Yp-9I0" id="Oq7-QS-YiR"/>
+                        <outlet property="vegeterianSwitch" destination="LID-Y4-cRp" id="plC-bt-8zo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uep-yW-mlP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
