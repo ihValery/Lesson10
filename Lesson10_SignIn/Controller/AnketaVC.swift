@@ -40,18 +40,24 @@ class AnketaVC: UIViewController {
     }
     @IBAction func sendDataBttnAction(_ sender: UIButton) {
         if let nameTF = nameTF.text, let surNameTF = surnameTF.text {
-            UserDefaults.standard.set(nameTF, forKey: "name")
-            UserDefaults.standard.set(surNameTF, forKey: "surname")
-            
-            if smokeSwitch.isOn { UserDefaults.standard.set("smoke", forKey: "smoke") }
-            if vegeterianSwitch.isOn { UserDefaults.standard.set("vegan", forKey: "vegeterian") }
-            
-            UserDefaults.standard.set(String(format: "%.0f", stepperChildren.value), forKey: "children")
-        } else {
-            fillInAllTheFields.isHidden = false
+            if !nameTF.isEmpty && !surNameTF.isEmpty {
+                UserDefaults.standard.set(nameTF, forKey: "name")
+                UserDefaults.standard.set(surNameTF, forKey: "surname")
+                
+                if smokeSwitch.isOn {
+                    UserDefaults.standard.set("smoke", forKey: "smoke")
+                }
+                if vegeterianSwitch.isOn {
+                    UserDefaults.standard.set("vegan", forKey: "vegeterian")
+                }
+                
+                UserDefaults.standard.set(String(format: "%.0f", stepperChildren.value), forKey: "children")
+                sendDataButton.isEnabled = false
+                sendDataButton.alpha = 1
+            } else {
+                fillInAllTheFields.isHidden = false
+            }
         }
-        
-        
     }
     
     
@@ -102,6 +108,9 @@ class AnketaVC: UIViewController {
         surnameTF.clipsToBounds = true
         
         fillInAllTheFields.isHidden = true
+        
+        sendDataButton.isEnabled = true
+        sendDataButton.alpha = 0.3
     }
     
     //Скрыть панель навигации на контроллере этого вида
