@@ -10,23 +10,33 @@ import UIKit
 class verificationVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var vTextField: UITextField!
+    @IBOutlet weak var errorPinLabel: UILabel!
+    @IBOutlet weak var updatePCBttn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setMyDesign()
-        // Do any additional setup after loading the view.
     }
     
-    //performSegue(withIdentifier: "fromRegistrationToMainApp", sender: nil)
     
     @IBAction func vTextFieldAction(_ sender: UITextField) {
+        errorPinLabel.isHidden = true
         if let textField = vTextField.text {
             if textField == vTextField.placeholder {
                 performSegue(withIdentifier: "fromRegistrationToMainApp", sender: nil)
+            } else if textField.count == 4 {
+                errorPinLabel.isHidden = false
+                updatePCBttn.isHidden = false
+                
             }
         }
     }
+    @IBAction func updatePinCodeAction(_ sender: UIButton) {
+        vTextField.text = ""
+        vTextField.placeholder = randomPlaceholder()
+    }
+    
+    
     private func setMyDesign() {
         vTextField.layer.cornerRadius = 15
         vTextField.layer.borderWidth = 1.5
@@ -37,11 +47,13 @@ class verificationVC: UIViewController, UITextFieldDelegate {
         vTextField.delegate = self
         
         vTextField.placeholder = randomPlaceholder()
+        
+        errorPinLabel.isHidden = true
+        updatePCBttn.isHidden = true
     }
     
     private func randomPlaceholder() -> String {
-        let tempPlaceholder = UInt.random(in: 1000...9999)
-        return String(tempPlaceholder)
+        return String(UInt.random(in: 1000...9999))
     }
     
     //Ограничение по количеству вводимых символов в TextField

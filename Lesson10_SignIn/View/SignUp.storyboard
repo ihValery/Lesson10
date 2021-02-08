@@ -155,13 +155,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter this code to complete the registration." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTe-xi-ctr">
-                                <rect key="frame" x="25" y="488" width="364" height="48"/>
+                                <rect key="frame" x="25" y="253" width="364" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="8765" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftB-XV-EMS">
-                                <rect key="frame" x="117" y="309" width="180" height="100"/>
+                                <rect key="frame" x="117" y="342" width="180" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="cpM-cI-dTt"/>
                                     <constraint firstAttribute="width" constant="180" id="kQL-rr-plL"/>
@@ -172,24 +172,49 @@
                                     <action selector="vTextFieldAction:" destination="OIZ-ka-KBC" eventType="editingChanged" id="azX-X8-rUz"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYm-6J-tig">
+                                <rect key="frame" x="42" y="607" width="330" height="72"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="50"/>
+                                <state key="normal" title="Update pin code">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="updatePinCodeAction:" destination="OIZ-ka-KBC" eventType="touchUpInside" id="Xbt-fz-dks"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pin code is expired, try to get a new one by clicking the resend button bellow." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdg-Es-UhL">
+                                <rect key="frame" x="57" y="450" width="300" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Efq-CL-HJa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ncs-rH-bkX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PUg-fF-md4" firstAttribute="trailing" secondItem="ncs-rH-bkX" secondAttribute="trailing" constant="-25" id="3hW-91-Vte"/>
-                            <constraint firstItem="ftB-XV-EMS" firstAttribute="top" secondItem="PUg-fF-md4" secondAttribute="bottom" constant="64" id="DEb-ys-3AQ"/>
+                            <constraint firstItem="ftB-XV-EMS" firstAttribute="top" secondItem="PUg-fF-md4" secondAttribute="bottom" constant="97" id="DEb-ys-3AQ"/>
                             <constraint firstItem="ftB-XV-EMS" firstAttribute="centerX" secondItem="ncs-rH-bkX" secondAttribute="centerX" id="ENc-5V-zGn"/>
                             <constraint firstItem="PdF-WH-4qh" firstAttribute="top" secondItem="ncs-rH-bkX" secondAttribute="top" constant="96" id="EsG-ku-GgO"/>
+                            <constraint firstItem="Kdg-Es-UhL" firstAttribute="top" secondItem="ftB-XV-EMS" secondAttribute="bottom" constant="8" id="GQc-Xq-HQo"/>
+                            <constraint firstItem="xYm-6J-tig" firstAttribute="top" secondItem="ftB-XV-EMS" secondAttribute="bottom" constant="165" id="GUe-QR-YxI"/>
                             <constraint firstItem="gTe-xi-ctr" firstAttribute="leading" secondItem="ncs-rH-bkX" secondAttribute="leading" constant="25" id="Iy0-eY-Z8r"/>
+                            <constraint firstItem="xYm-6J-tig" firstAttribute="centerX" secondItem="ftB-XV-EMS" secondAttribute="centerX" id="KNa-HG-vvN"/>
                             <constraint firstItem="PdF-WH-4qh" firstAttribute="leading" secondItem="ncs-rH-bkX" secondAttribute="leading" constant="49" id="L1q-Qa-YXT"/>
                             <constraint firstItem="PUg-fF-md4" firstAttribute="leading" secondItem="ncs-rH-bkX" secondAttribute="leading" constant="25" id="bxR-pj-lCW"/>
                             <constraint firstItem="gTe-xi-ctr" firstAttribute="trailing" secondItem="ncs-rH-bkX" secondAttribute="trailing" constant="-25" id="gmO-uU-tqX"/>
+                            <constraint firstItem="Kdg-Es-UhL" firstAttribute="centerX" secondItem="ncs-rH-bkX" secondAttribute="centerX" id="kDK-2Z-ZmT"/>
                             <constraint firstItem="PUg-fF-md4" firstAttribute="top" secondItem="PdF-WH-4qh" secondAttribute="bottom" constant="16" id="kL1-Xk-pqH"/>
-                            <constraint firstItem="gTe-xi-ctr" firstAttribute="top" secondItem="ftB-XV-EMS" secondAttribute="bottom" constant="79" id="o5r-il-eNg"/>
+                            <constraint firstItem="gTe-xi-ctr" firstAttribute="top" secondItem="ftB-XV-EMS" secondAttribute="bottom" constant="-189" id="o5r-il-eNg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dyg-ds-nk1"/>
                     <connections>
+                        <outlet property="errorPinLabel" destination="Kdg-Es-UhL" id="rXj-bB-TwB"/>
+                        <outlet property="updatePCBttn" destination="xYm-6J-tig" id="cYW-oh-uFR"/>
                         <outlet property="vTextField" destination="ftB-XV-EMS" id="U4z-aY-jR2"/>
                         <segue destination="DGl-a6-cuf" kind="show" identifier="fromRegistrationToMainApp" id="3an-fl-ktk"/>
                     </connections>

@@ -96,7 +96,7 @@ class ViewController: UIViewController {
         if let tempDate = UserDefaults.standard.object(forKey: "Date") as? Date,
            let earlyDate = Calendar.current.date(
             byAdding: .minute,
-            value: -10,
+            value: -60,
             to: Date()) {
             return earlyDate <= tempDate
         } else {
