@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8008169525CB1BEB00C5DCF3 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */; };
+		800E3CA025CC262300D16DC2 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E3C9F25CC262300D16DC2 /* signUpViewController.swift */; };
+		802A220825D108830005CDEE /* verificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A220725D108830005CDEE /* verificationVC.swift */; };
+		802A220B25D133180005CDEE /* AnketaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A220A25D133180005CDEE /* AnketaVC.swift */; };
+		803497D025CC906000F22A56 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803497CF25CC906000F22A56 /* UserModel.swift */; };
+		803497D325CC952200F22A56 /* MainApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803497D225CC952200F22A56 /* MainApp.storyboard */; };
+		803497DA25CCA9C700F22A56 /* MainAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803497D925CCA9C700F22A56 /* MainAppViewController.swift */; };
 		806425FD25CB0783004D52C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806425FC25CB0783004D52C0 /* AppDelegate.swift */; };
 		806425FF25CB0783004D52C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806425FE25CB0783004D52C0 /* SceneDelegate.swift */; };
 		8064260125CB0783004D52C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064260025CB0783004D52C0 /* ViewController.swift */; };
@@ -16,7 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		806425F925CB0783004D52C0 /* Lesson10PersonalityQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson10PersonalityQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		800E3C9F25CC262300D16DC2 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		802A220725D108830005CDEE /* verificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verificationVC.swift; sourceTree = "<group>"; };
+		802A220A25D133180005CDEE /* AnketaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnketaVC.swift; sourceTree = "<group>"; };
+		803497CF25CC906000F22A56 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		803497D225CC952200F22A56 /* MainApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainApp.storyboard; sourceTree = "<group>"; };
+		803497D925CCA9C700F22A56 /* MainAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppViewController.swift; sourceTree = "<group>"; };
+		806425F925CB0783004D52C0 /* Lesson10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806425FC25CB0783004D52C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		806425FE25CB0783004D52C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8064260025CB0783004D52C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,10 +51,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		803497CD25CC8ED700F22A56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				803497CF25CC906000F22A56 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		806425F025CB0783004D52C0 = {
 			isa = PBXGroup;
 			children = (
-				806425FB25CB0783004D52C0 /* Lesson10PersonalityQuiz */,
+				806425FB25CB0783004D52C0 /* Lesson10_SignIn */,
 				806425FA25CB0783004D52C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +70,62 @@
 		806425FA25CB0783004D52C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				806425F925CB0783004D52C0 /* Lesson10PersonalityQuiz.app */,
+				806425F925CB0783004D52C0 /* Lesson10.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		806425FB25CB0783004D52C0 /* Lesson10PersonalityQuiz */ = {
+		806425FB25CB0783004D52C0 /* Lesson10_SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				806425FC25CB0783004D52C0 /* AppDelegate.swift */,
-				806425FE25CB0783004D52C0 /* SceneDelegate.swift */,
-				8064260025CB0783004D52C0 /* ViewController.swift */,
-				8064260225CB0783004D52C0 /* Main.storyboard */,
-				8064260525CB0784004D52C0 /* Assets.xcassets */,
-				8064260725CB0784004D52C0 /* LaunchScreen.storyboard */,
-				8064260A25CB0784004D52C0 /* Info.plist */,
+				8064261325CB17D2004D52C0 /* View */,
+				8064261225CB17C8004D52C0 /* Controller */,
+				803497CD25CC8ED700F22A56 /* Model */,
+				8064261525CB180C004D52C0 /* Resources */,
 			);
-			path = Lesson10PersonalityQuiz;
+			path = Lesson10_SignIn;
+			sourceTree = "<group>";
+		};
+		8064261225CB17C8004D52C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8064260025CB0783004D52C0 /* ViewController.swift */,
+				800E3C9F25CC262300D16DC2 /* signUpViewController.swift */,
+				803497D925CCA9C700F22A56 /* MainAppViewController.swift */,
+				802A220725D108830005CDEE /* verificationVC.swift */,
+				802A220A25D133180005CDEE /* AnketaVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8064261325CB17D2004D52C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8064260725CB0784004D52C0 /* LaunchScreen.storyboard */,
+				8064260225CB0783004D52C0 /* Main.storyboard */,
+				8008169425CB1BEB00C5DCF3 /* SignUp.storyboard */,
+				803497D225CC952200F22A56 /* MainApp.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8064261525CB180C004D52C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8064260A25CB0784004D52C0 /* Info.plist */,
+				8064260525CB0784004D52C0 /* Assets.xcassets */,
+				806425FE25CB0783004D52C0 /* SceneDelegate.swift */,
+				806425FC25CB0783004D52C0 /* AppDelegate.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		806425F825CB0783004D52C0 /* Lesson10PersonalityQuiz */ = {
+		806425F825CB0783004D52C0 /* Lesson10 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8064260D25CB0784004D52C0 /* Build configuration list for PBXNativeTarget "Lesson10PersonalityQuiz" */;
+			buildConfigurationList = 8064260D25CB0784004D52C0 /* Build configuration list for PBXNativeTarget "Lesson10" */;
 			buildPhases = (
 				806425F525CB0783004D52C0 /* Sources */,
 				806425F625CB0783004D52C0 /* Frameworks */,
@@ -82,9 +135,9 @@
 			);
 			dependencies = (
 			);
-			name = Lesson10PersonalityQuiz;
+			name = Lesson10;
 			productName = Lesson10PersonalityQuiz;
-			productReference = 806425F925CB0783004D52C0 /* Lesson10PersonalityQuiz.app */;
+			productReference = 806425F925CB0783004D52C0 /* Lesson10.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +154,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 806425F425CB0783004D52C0 /* Build configuration list for PBXProject "Lesson10PersonalityQuiz" */;
+			buildConfigurationList = 806425F425CB0783004D52C0 /* Build configuration list for PBXProject "Lesson10" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +167,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				806425F825CB0783004D52C0 /* Lesson10PersonalityQuiz */,
+				806425F825CB0783004D52C0 /* Lesson10 */,
 			);
 		};
 /* End PBXProject section */
@@ -124,8 +177,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803497D325CC952200F22A56 /* MainApp.storyboard in Resources */,
 				8064260925CB0784004D52C0 /* LaunchScreen.storyboard in Resources */,
 				8064260625CB0784004D52C0 /* Assets.xcassets in Resources */,
+				8008169525CB1BEB00C5DCF3 /* SignUp.storyboard in Resources */,
 				8064260425CB0783004D52C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802A220825D108830005CDEE /* verificationVC.swift in Sources */,
 				8064260125CB0783004D52C0 /* ViewController.swift in Sources */,
+				803497DA25CCA9C700F22A56 /* MainAppViewController.swift in Sources */,
 				806425FD25CB0783004D52C0 /* AppDelegate.swift in Sources */,
+				800E3CA025CC262300D16DC2 /* signUpViewController.swift in Sources */,
+				803497D025CC906000F22A56 /* UserModel.swift in Sources */,
+				802A220B25D133180005CDEE /* AnketaVC.swift in Sources */,
 				806425FF25CB0783004D52C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,16 +347,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 640;
 				DEVELOPMENT_TEAM = 879U287R5Q;
-				INFOPLIST_FILE = Lesson10PersonalityQuiz/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Lesson10_SignIn/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lessonTypeCasting.Lesson10PersonalityQuiz;
+				MARKETING_VERSION = 2.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "lessonTypeCasting.-Lesson10-SignIn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,23 +368,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 640;
 				DEVELOPMENT_TEAM = 879U287R5Q;
-				INFOPLIST_FILE = Lesson10PersonalityQuiz/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Lesson10_SignIn/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lessonTypeCasting.Lesson10PersonalityQuiz;
+				MARKETING_VERSION = 2.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "lessonTypeCasting.-Lesson10-SignIn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		806425F425CB0783004D52C0 /* Build configuration list for PBXProject "Lesson10PersonalityQuiz" */ = {
+		806425F425CB0783004D52C0 /* Build configuration list for PBXProject "Lesson10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8064260B25CB0784004D52C0 /* Debug */,
@@ -331,7 +395,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8064260D25CB0784004D52C0 /* Build configuration list for PBXNativeTarget "Lesson10PersonalityQuiz" */ = {
+		8064260D25CB0784004D52C0 /* Build configuration list for PBXNativeTarget "Lesson10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8064260E25CB0784004D52C0 /* Debug */,
